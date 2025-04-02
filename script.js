@@ -1,6 +1,6 @@
 
 // 1. Напиши код, который изменит document.title на "Учимся работать с DOM".
-const tetleEll = document.innerText= 'Учимся работать с DOM'
+const tetleEll = document.innerText = 'Учимся работать с DOM'
 // 2. Создай строку с HTML - разметкой и вставь её в document.body с помощьюinnerHTML.Объясни, почемуinnerHTML может быть небезопасным.
 const pEll = document.createElement('p')
 document.body.append(pEll)
@@ -12,7 +12,7 @@ console.log(`Браузер: ${browser.name} Версия: ${browser.version}`);
 //     - Операционную систему пользователя
 // 4. Выведи в консоль текущий URL страницы, используяwindow.location.href.
 // 5. Создай ссылку вdocument.body, которая перенаправляет пользователя на "https://example.com"
-const currentUrl = window.location='"https://example.com"';
+const currentUrl = window.location = '"https://example.com"';
 console.log(currentUrl);
 
 // ---
@@ -25,15 +25,15 @@ console.log('текстовое содержимое.' + idHeader);
 const itemEll = document.querySelectorAll('.item')
 // 3. Найди все<p> - теги на странице и измени их текст на "Новый текст" 
 const pEl = document.querySelectorAll('p')
-document.innerText='Новый текст'
+document.innerText = 'Новый текст'
 // 4. Найди первый элемент с классом "active" и добавь емуbackground-color: yellow.
 const active = document.querySelector('.active')
-active.style.backgroundColor='yellow'
+active.style.backgroundColor = 'yellow'
 // 5. Найди все <li> внутри <ul> и добавь к каждому атрибут data-index с его порядковым номером.
-const ulEll=document.querySelector('ul')
+const ulEll = document.querySelector('ul')
 ulEll.classList.add('list')
 const list = document.querySelector('.list')
-listLi=list.querySelector('li')
+listLi = list.querySelector('li')
 
 // ---
 
@@ -46,19 +46,19 @@ document.body.append(divEll)
 // 2. Создай<p> - элемент с текстом "Этот абзац добавлен первым!" и добавь его в document.body 
 
 const pEllem = document.createElement('p')
-pEllem.innerText= 'Этот абзац добавлен первым!'
+pEllem.innerText = 'Этот абзац добавлен первым!'
 document.body.append(pEllem)
 // 3. Создай список <ul> и добавь в него 5 <li> с текстом"Элемент 1", "Элемент 2" и т.д.
 const ulEl = document.createElement('ul')
-if(let i = 0; i<5; i++){
-const liEl = document.createElement('li')
-document.append(ulEl)
+if (let i = 0; i < 5; i++) {
+    const liEl = document.createElement('li')
+    document.append(ulEl)
 }
 
 // 4. Замени существующий элемент с id="old" на новый <h2> с текстом "Заголовок заменён" с помощьюreplaceChild().
 const old = document.querySelector('#old')
 const h2EL = document.createElement('h2')
-h2EL.innerText='Заголовок заменён'
+h2EL.innerText = 'Заголовок заменён'
 old.replaceChild('h2')
 
 // 5. Удали из document.body первый<p> - элемент, используяremoveChild().
@@ -73,10 +73,22 @@ delet.removeChild()
 // ---
 
 // 1. Найди элемент с id="box" и измени его цвет фона на blue черезstyle.backgroundColor.
+
+const idEll = document.querySelector('#box')
+idEll.style.backgroundColor = 'blue'
 // 2. Создай новый элемент <div> с текстом "Этот блок скрыт" и добавь ему класс "hidden" через classList.
+const divTExt = document.createElement('div')
+divTExt.innerText = 'Этот блок скрыт'
+divTExt.classList.add('hidden')
 // 3. Найди элемент с классом "menu" и удали у него класс"active", если он есть.
+const menuEll = document.querySelector('.menu')
+menuEll.classList.remove()
+
 // 4. Найди элемент с id="toggle-btn" и переключи у него класс "highlight" с помощьюclassList.toggle().
+const btm = document.querySelector('#toggle-btn')
+btm.classList.toggle('highlight')
 // 5. Проверь, есть ли у элемента с id="card" класс"selected", и выведи true или false в консоль.
+
 
 
 
